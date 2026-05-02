@@ -1,0 +1,116 @@
+/* Group Member(s): Philomena Nesci
+File Name: style.css
+Date: 3/4/2026 
+*/
+
+/* CSS Reset */
+body, header, nav, main, footer, div, h1, h2, h3, ul, li, p, a, img, iframe {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+/* Base Mobile Styles */
+body {
+    background-color: #EE1B11;
+    /* Custom Google Font 1: Lora for body text */
+    font-family: 'Lora', serif;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    /* Custom Google Font 2: Archivo Black for headings */
+    font-family: 'Archivo Black', sans-serif;
+    text-transform: uppercase;
+}
+
+img {
+    margin: 15px auto;
+    max-width: 100%;
+    display: block;
+    /* Requirement: Rounded corners on photos */
+    border-radius: 15px;
+}
+
+iframe {
+    width: 100%;
+    height: 300px;
+    border-radius: 15px; /* Second element with rounded corners */
+}
+
+/* Header */
+header {
+    padding: 20px 10px;
+    text-align: center;
+    background-color: #EE1B11;
+}
+
+header h1 {
+    color: #FEFFFF;
+    font-size: 1.5rem;
+}
+
+/* Mobile Friendly Navigation */
+nav {
+    background-color: #1F0007;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column; /* Stacked for mobile */
+}
+
+nav li a {
+    display: block;
+    color: #FEFFFF;
+    padding: 15px;
+    text-decoration: none;
+    text-align: center;
+    border-bottom: 1px solid #33000a;
+}
+
+/* Mobile Friendly Email Link */
+.email-link {
+    display: inline-block;
+    background-color: #FEFFFF;
+    color: #EE1B11 !important;
+    padding: 10px 20px;
+    border-radius: 25px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Main Content */
+main {
+    padding: 15px;
+}
+
+main p, main ul {
+    color: #FEFFFF;
+    margin-bottom: 15px;
+}
+
+main h2, main h3 {
+    color: #FEFFFF;
+    margin-top: 10px;
+}
+
+/* Hide nonessential content on very small screens if necessary */
+.mobile-hide {
+    display: none;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #1F0007;
+    padding: 20px;
+    color: #FEFFFF;
+}
+
+footer a {
+    color: #FEFFFF;
+    text-decoration: underline;
+}
