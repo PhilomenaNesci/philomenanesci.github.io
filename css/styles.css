@@ -1,0 +1,101 @@
+/*
+Student Name: Philomena Nesci
+Date: 5/2/2026
+File Name: styles.css
+*/
+
+/* Style rules for body background and text */
+body {
+	margin: 0;
+    text-align: center;
+    font-family: "Nerko One", cursive;
+    font-weight: 400;
+    font-style: normal;
+    color: #f1dd03;
+    text-shadow: 2px 2px 4px #f16603, -1px -1px 0px #f16603, 1px -1px 0px #f16603, -1px 1px 0px #f16603;
+}
+
+header {
+	background-color: #9280d9;
+	padding: 40px 20px;
+}
+
+main {
+	background-color: #a2f89a;
+	padding-bottom: 50px;
+}
+
+a {
+    color: #f1dd03;
+    text-decoration: none; /* Optional: removes the underline */
+}
+
+a:hover {
+    color: #ffffff;
+}
+
+h1 {
+    font-size: 80px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.age {
+    font-size: 32px;
+}
+
+caption {
+	font-size: 32px;
+	padding-bottom: 30px;
+}
+
+/* Style rules for images */
+img {
+	border-radius: 15px;
+	margin: 15px;
+	object-fit: contain;
+}
+
+.piano {
+	width: 300px;
+	height: auto;
+	margin-bottom: 30px;
+}
+
+.slug {
+	width: 200px;
+	height: auto;
+	border-radius: 15px;
+	margin: 10px 130px;
+}
+
+/* Style rules for table */
+table {
+	margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+    background-color: rgba(255, 255, 255, 0.5);
+	width: 90%;
+    max-width: 1400px;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #444;
+	font-size: 24px;
+}
+
+/* Style rules for footer background and text*/
+
+footer {
+    background-color: #9280d9;
+    padding: 30px;
+    border-radius: 20px 20px 0 0;
+}
+
+.quote {
+    font-size: 20px;
+    margin: 5px 0;
+    font-style: italic;
+}
