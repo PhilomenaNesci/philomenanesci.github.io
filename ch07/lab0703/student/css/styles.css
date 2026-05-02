@@ -1,0 +1,255 @@
+/* Group Member(s): Philomena Nesci
+File Name: style.css
+Date: 4/14/2026 
+*/
+
+/* CSS Reset */
+body, header, nav, main, footer, div, h1, h2, h3, ul, li, p, a, img, iframe, table, th, td,
+section, article, figure, figcaption{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+/* Base Mobile Styles */
+body {
+    background-color: #EE1B11;
+    font-family: 'Lora', serif;
+    line-height: 1.6;
+}
+
+h1, h2, h3, .membersh2 {
+    font-family: 'Archivo Black', sans-serif;
+    text-transform: uppercase;
+	text-align: center;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+	
+.board-row {
+	text-align: center
+}
+
+img {
+    margin: 15px auto;
+    max-width: 100%;
+    display: block;
+    border-radius: 15px;
+}
+
+iframe {
+    width: 100%;
+    height: 300px;
+    border-radius: 15px;
+}
+
+header {
+    padding: 20px 10px;
+    text-align: center;
+	background: linear-gradient(135deg, #EE1B11 0%, #1F0007 100%);
+}
+
+header h1 {
+    color: #FEFFFF;
+    font-size: 1.5rem;
+}
+
+nav {
+    background-color: #1F0007;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+}
+
+nav li a {
+    display: block;
+    color: #FEFFFF;
+    padding: 15px;
+    text-decoration: none;
+    text-align: center;
+    border-bottom: 1px solid #33000a;
+}
+
+main {
+    padding: 15px;
+}
+
+main p, main ul {
+    color: #FEFFFF;
+    margin-bottom: 15px;
+}
+
+main h2, main h3 {
+    color: #FEFFFF;
+    margin-top: 10px;
+}
+
+/* Container for each row */
+.board-row {
+    display: grid;
+    gap: 20px;
+    width: 100%;
+    margin-bottom: 40px;
+    justify-items: center; /* Centers the figures in the grid spots */
+}
+
+/* Figure styling */
+figure {
+    background-color: white;
+    border: 2px solid black;
+    box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.4);
+	padding: 0;
+    margin: 0;
+    width: 100%;
+    max-width: 250px;
+    display: flex;
+    flex-direction: column;
+	overflow: hidden;
+}
+
+/* Image styling within the figure */
+figure img {
+    width: 100%;
+    height: 250px;
+	background-color: white;
+    object-fit: contain;
+	display: block;
+    border-radius: 0; /* Removes 15px radius from global img rule */
+    margin: 0;
+}
+
+/* Figcaption styling */
+figcaption {
+    background-color: rgba(31, 0, 7, 0.8);
+    color: #FEFFFF;
+    padding: 10px;
+    text-align: center;
+    font-family: 'Archivo Black', sans-serif;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    border-top: 2px solid black;
+    flex-grow: 1; /* Ensures captions stay same height if text wraps */
+    width: 100%;
+	box-sizing: border-box;
+	text-shadow:  2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+footer {
+    text-align: center;
+    background-color: #1F0007;
+    padding: 20px;
+    color: #FEFFFF;
+}
+
+footer a {
+    color: #FEFFFF;
+    text-decoration: underline;
+}
+
+/* TABLET MEDIA QUERY */
+@media screen and (min-width: 768px) {
+    
+    /* Change nav to horizontal row for tablet/desktop */
+    nav ul {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    nav li a {
+        border-bottom: none;
+    }
+
+    /* Show tablet-specific content */
+    .mobile-hide {
+        display: block;
+    }
+	
+	/* Define the column counts for Tablet */
+    .row-of-4 { grid-template-columns: repeat(4, 1fr); }
+    .row-of-3 { grid-template-columns: repeat(3, 1fr); }
+    .row-of-2 { grid-template-columns: repeat(2, 1fr); }
+	
+	figcaption {
+		background-color:rgba(31, 0, 7, 0.8);
+		color: #FEFFFF;
+	}
+}
+
+/* DESKTOP MEDIA QUERY (min-width: 1024px) */
+@media screen and (min-width: 1024px) {
+	
+    main {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        max-width: 1200px;
+        margin: 0 auto;
+        gap: 20px;
+    }
+	
+    main > *, .membersh2, .board-row, table, p, ul {
+        grid-column: span 12;
+    }
+	
+	header h1, h2, h3, .membersh2, .board-row, table {
+		text-align: center;
+	}
+	
+	main p, main ul {
+		text-align: left;
+	}
+	
+    .contact-board-section, .contact-conductor-section {
+        grid-column: 2 / 12;
+        width: 100%;
+    }
+
+    main:has(#about):has(#history) {
+        display: flex; 
+        flex-direction: row; 
+        align-items: flex-start;
+        justify-content: center;
+        gap: 40px;
+    }
+
+    #about, #history {
+        flex: 1;
+    }
+
+    nav li a:hover {
+        background-color: #EE1B11;
+        color: #FEFFFF;
+        transition: background-color 0.4s ease;
+    }
+}
+
+/* LARGE DESKTOP MEDIA QUERY (min-width: 1440px) */
+@media screen and (min-width: 1440px) {
+    body {
+        font-size: 1.1rem; /* Slightly larger text for huge screens */
+    }
+
+    header h1 {
+        font-size: 3rem;
+    }
+
+}
+
+/* PRINT MEDIA QUERY */
+@media print {
+    /* Hide navigation and iframes (maps) for printing */
+    nav, iframe, img {
+        display: none;
+    }
+
+    body {
+        background-color: white;
+        color: black;
+    }
+
+    main p, main ul, main h2, main h3 {
+        color: black;
+    }
+}
