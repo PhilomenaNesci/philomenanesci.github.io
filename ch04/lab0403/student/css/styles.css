@@ -1,0 +1,147 @@
+/* Group Member(s): Philomena Nesci
+File Name: style.css
+Date: 3/4/2026 */
+
+/* CSS Reset */
+
+body, header, nav, main, footer, div, h1, h2, h3, ul, li, p, a, img, iframe {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Style rules for body and images */
+
+body {
+    background-color: #EE1B11;
+	font-family: Trebuchet MS, Tahoma, sans-serif;
+}
+
+img {
+	padding-top: 15px;    
+    padding-bottom: 15px; 
+    max-width: 100%;
+    display: block;
+}	
+
+/* Style rules for header */
+
+header {
+    padding-top: 25px;    
+    padding-bottom: 25px; 
+    text-align: center;   
+}
+
+header h1 {
+    color: #FEFFFF;
+}
+
+/* Style rules for navigation area */
+
+nav {
+    background-color: #1F0007;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    text-align: center;
+}
+
+nav li {
+    display: inline-block;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+nav li a {
+    display: block;
+    color: #FEFFFF;
+    padding: 0.5em 2em;
+    text-decoration: none;
+}
+
+/* Style rules for main content */
+
+main {
+    padding: 2%;
+}
+
+main p {
+	padding-top: 5px;    
+    padding-bottom: 5px; 
+    font-size: 1.25em;
+	color: #FEFFFF;
+}
+
+main p a {
+    color: #FEFFFF;
+    text-decoration: none;
+}
+
+main h1 {
+    padding-top: 2%;
+	color: #FEFFFF;
+}
+
+main h2 {    
+    padding-bottom: 5px; 
+	color: #FEFFFF;
+}
+
+main h3 {
+    padding-top: 10px;    
+    padding-bottom: 10px; 
+	color: #FEFFFF;
+}
+
+main ul {
+	padding-top: 5px;    
+    padding-bottom: 5px; 
+    list-style-type: square;
+}
+
+ul {
+	color: #FEFFFF;
+}
+
+main li a {
+    color: #FEFFFF;
+    text-decoration: none;
+}
+
+.link {
+    color: #FEFFFF;
+    text-decoration: none;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.action {
+    font-size: 1.75em;
+    font-weight: bold;
+    text-align: center;
+}
+
+#contact {
+    text-align: center;
+}
+
+/* Style rules for footer content */
+
+footer {
+    text-align: center;
+    background-color: #EE1B11;
+    font-size: 0.9em;
+    padding: 1% 0%;
+}
+
+footer p {
+	color: #FEFFFF;
+    text-decoration: none;
+}
+
+footer a {
+    color: #FEFFFF;
+    text-decoration: none;
+}
