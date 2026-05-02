@@ -1,0 +1,170 @@
+/* Group Member(s): Philomena Nesci
+File Name: style.css
+Date: 3/4/2026 
+*/
+
+/* CSS Reset */
+body, header, nav, main, footer, div, h1, h2, h3, ul, li, p, a, img, iframe {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+/* Base Mobile Styles */
+body {
+    background-color: #EE1B11;
+    font-family: 'Lora', serif;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    font-family: 'Archivo Black', sans-serif;
+    text-transform: uppercase;
+}
+
+img {
+    margin: 15px auto;
+    max-width: 100%;
+    display: block;
+    border-radius: 15px;
+}
+
+iframe {
+    width: 100%;
+    height: 300px;
+    border-radius: 15px;
+}
+
+header {
+    padding: 20px 10px;
+    text-align: center;
+    background-color: #EE1B11;
+}
+
+header h1 {
+    color: #FEFFFF;
+    font-size: 1.5rem;
+}
+
+nav {
+    background-color: #1F0007;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+}
+
+nav li a {
+    display: block;
+    color: #FEFFFF;
+    padding: 15px;
+    text-decoration: none;
+    text-align: center;
+    border-bottom: 1px solid #33000a;
+}
+
+main {
+    padding: 15px;
+}
+
+main p, main ul {
+    color: #FEFFFF;
+    margin-bottom: 15px;
+}
+
+main h2, main h3 {
+    color: #FEFFFF;
+    margin-top: 10px;
+}
+
+footer {
+    text-align: center;
+    background-color: #1F0007;
+    padding: 20px;
+    color: #FEFFFF;
+}
+
+footer a {
+    color: #FEFFFF;
+    text-decoration: underline;
+}
+
+/* TABLET MEDIA QUERY */
+@media screen and (min-width: 768px) {
+    
+    /* Change nav to horizontal row for tablet/desktop */
+    nav ul {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    nav li a {
+        border-bottom: none;
+    }
+
+    /* Apply a Gradient */
+    header {
+        background: linear-gradient(135deg, #EE1B11 0%, #1F0007 100%);
+    }
+
+    /* Show tablet-specific content */
+    .mobile-hide {
+        display: block;
+    }
+}
+
+/* DESKTOP MEDIA QUERY (min-width: 1024px) */
+@media screen and (min-width: 1024px) {
+    
+    /* Two-column layout for the About page */
+    /* This targets the <main> on about.html which has #about and #history */
+    main {
+        display: flex;
+        gap: 40px;
+        align-items: flex-start;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    #about, #history {
+        flex: 1;
+    }
+
+    /* Dynamic Pseudo-class */
+    nav li a:hover {
+        background-color: #EE1B11;
+        color: #FEFFFF;
+        transition: background-color 0.4s ease;
+    }
+}
+
+/* LARGE DESKTOP MEDIA QUERY (min-width: 1440px) */
+@media screen and (min-width: 1440px) {
+    body {
+        font-size: 1.1rem; /* Slightly larger text for huge screens */
+    }
+
+    header h1 {
+        font-size: 3rem;
+    }
+}
+
+/* PRINT MEDIA QUERY */
+@media print {
+    /* Hide navigation and iframes (maps) for printing */
+    nav, iframe, img {
+        display: none;
+    }
+
+    body {
+        background-color: white;
+        color: black;
+    }
+
+    main p, main ul, main h2, main h3 {
+        color: black;
+    }
+}
