@@ -1,0 +1,174 @@
+<!-- The following states what type of file this is, what language it is in, and the defining traits of the website.
+In the comments it also states who created it and what the name of the file is.  It is indicated this file will serve
+as the contact page for this website.
+-->
+
+<!DOCTYPE html>
+<!--
+Student Name: Philomena Nesci
+File Name: contact.html
+Date: 4/25/2026
+-->
+<html lang="en">
+
+<head>
+
+<!--
+The name of the webpage is stated here, and will be visible in the tab when the file is opened
+-->
+
+<title> Wild Rescues: Contact </title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Emblema+One&fam
+ily=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="styleshe
+et">
+<link rel="stylesheet" href="css/styles.css">
+
+<link rel="shortcut icon" href="images/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+<link rel="icon" sizes="192x192" href="images/android-chrome-192.png">
+
+</head>
+
+<body>
+	<div id="wrapper">
+
+		<!-- 
+		In large bold type, the title of the website is explicitly stated in the header, decoarated with a pawprint element.
+		In smaller bold font below, the organization's motto is displayed. 
+		-->
+
+	<!-- Mobile Nav -->
+	<nav class="mobile-nav">
+		<div id="nav-links">
+			<a href="index.html">Home</a>
+			<a href="partnership.html">Partnership</a>
+			<a href="gallery.html">Gallery</a>
+			<a href"faqs.html">FAQs</a>
+			<a href="contact.html">Contact Us</a>
+		</div>
+		<a class="nav-icon" onclick="hamburger()">
+			<div id="icon">&#9776;</div>
+		</a>
+	</nav>
+	
+	<header>
+		<div class="tab-desk">
+			<a href="index.html">
+				<img src="images/baby-hawk.jpg" alt="rescued baby hawk">
+			</a>
+		</div>
+		<div class="mobile">
+			<h1>&#128062; Wild Rescues </h1>
+			<h3>Rescue. Rehabilitate. Release.</h3>
+		</div>
+	</header>
+
+		<!-- 
+		The following offers various pages within the website, in an index-like fashion.  Each option is separated by a
+		decorative diamond shaped element.  The pages are accessible via hyperlink.
+		-->
+
+	<nav class="tab-desk">
+		<ul> 
+		<li> <a href="index.html"> Home </a> </li> 
+		<li> <a href="about.html"> About Us </a> </li>
+		<li> <a href="partnership.html"> Partnership </a> </li> 
+		<li> <a href="gallery.html"> Gallery </a> </li>
+		<li> <a href="faqs.html"> FAQs </a> </li>
+		<li> <a href="contact.html"> Contact </a> </li>
+		</ul>
+	</nav>
+
+		<!--
+		The main area contains Wild Rescues' phone number and their email, which is accessible via hyperlink.  A google
+		map is embedded in the iframe tages followed by Wild Rescues' street address in the paragraph tags.
+		-->
+
+	<main>
+		<div id="contact">
+			<h2> You can reach us at: </h2>
+			<p class="tab-desk">(814) 555-9228</p>
+			<p class="mobile"> <a href="tel:8145558989" class="tel-link round"> (814) 555-8989 </a></p>
+            <p> Email: <a href="mailto:contact@wildrescues.net" class="email-link">contact@wildrescues.net</a></p>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d222963.4463361012
+			2!2d-82.3220868510533!3d29.17045195549456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3
+			!1m2!1s0x88e62b541cba3ce5%3A0xf5f53be4b1380536!2sOcala%2C%20FL!5e0!3m2!1sen!2sus!4v17
+			70752533279!5m2!1sen!2sus" class="link" width="600" height="450" style="border:0;" allowfullscreen
+			="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+			<p> Address: 8989 Rescue Drive, Ocala, FL 34471 </p>
+		</div>
+		<div id="form">
+			<h2> Complete the form below and we will contact you soon. </h2>
+			<form class="form-grid"><!-- Start Form -->
+				<fieldset>
+				<legend> Contact Information </legend>
+					<label for="fName"> First Name: </label>
+					<input type="text" name="fName" id="fName">
+					
+					<label for="lName"> Last Name: </label>
+					<input type="text" name="lName" id="lName">
+					
+					<label for="bName"> Name of Business: </label>
+					<input type="text" name="bName" id="bName">
+					
+					<label for="email"> Email: </label>
+					<input type="email" name="email" id="email">
+					
+					<label for="phone"> Phone: </label>
+					<input type="tel" name="phone" id="phone">
+				</fieldset>
+				
+				<fieldset>
+				<legend> Additional Information </legend>
+					<p> I would like more information about: </p>
+					
+					<label for="vol">
+						<input type="radio" name="info" id="vol" 
+						value="Volunteering"> Volunteering
+					</label>
+
+					<label for="sponsor">
+						<input type="radio" name="info" id="sponsor" 
+						value="Sponsorship Opportunities"> Sponsorship Opportunities
+					</label>
+
+					<label for="wild">
+						<input type="radio" name="info" id="other" 
+						value="Other"> Other, please specify below.
+					</label>
+
+					<label for="questions">What questions do you have for us?</label>
+					
+					<textarea name="questions" id="questions" rows="5" cols="35"></textarea>
+				</fieldset>
+				
+				<input type="submit" id="submit" value="submit" class="btn">
+			</form>
+		</div>
+	</main>
+
+		<!--
+		Text in the footer, organized into separate paragraphs, declares copyright and offers contact information.  The email
+		is accessible via hyperlink.
+		-->
+
+	<footer>
+		<p> &copy; Copyright 2021.  All Rights Reserved. </p>
+		<p> <a href="mailto:contact@wildrescues.net">contact@wildrescues.net</a></p>
+
+		<!--
+		Here the footer and html file end.
+		-->
+
+	</footer>
+	</div>
+	<script src="scripts/script.js"></script>
+</body>
+
+</html>
