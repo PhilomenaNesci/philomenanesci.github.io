@@ -1,0 +1,6 @@
+http://www.exampledomain.com/index.html
+http://www.exampledomain.com/about.html
+http://www.exampledomain.com/join.html
+http://www.exampledomain.com/gallery.html
+http://www.exampledomain.com/donate.html
+http://www.exampledomain.com/members.html
