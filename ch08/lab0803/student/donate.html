@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<!--
+Group Member(s): Philomena Nesci
+File Name: template.html
+Date: 4/22/2026
+-->
+<html lang="en">
+
+<head>
+    <title> Augusta Curtis Concert Band: Donate </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+	
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+	<link rel="icon" sizes="192x192" href="images/android-chrome-192x192.png">
+	
+	<style>
+	table, th, td {
+	border: 1px solid black;
+	text-align: center;
+	}
+	th, td {
+	background-color: white;
+	}
+	</style>
+	
+</head>
+
+<body>
+
+<header>
+	<h1> Welcome to the Augusta Curtis Concert Band! </h1>
+</header>
+
+<nav>
+    <ul>
+        <li> <a href="index.html"> Home </a> </li>
+        <li> <a href="about.html"> About Us </a> </li>
+        <li> <a href="join.html"> Join the Band </a> </li>
+        <li> <a href="events.html"> Events</a> </li>
+        <li> <a href="news.html"> News</a> </li>
+        <li> <a href="gallery.html"> Gallery</a> </li>
+        <li> <a href="donate.html"> Donate </a> </li>
+        <li> <a href="merch.html"> Merch </a> </li>
+        <li> <a href="members.html"> Members </a> </li>
+    </ul>
+</nav>
+
+<!--
+The main section will be used to give a short explaination of the Augusta Curtis Concert Band to
+pique the visitor's interest.
+-->
+
+<main>
+
+<div class="mobile-tablet">
+	<h2> Sponsorship Tiers </h2>
+		<ul id="sponsorul">
+			<li> Grace Note Sponsorship: Under $25, Donor/business name listed in concert program. </li>
+			<li> Eighth Note Sponsorship: $25, Business card sized advetisement in concert program. (3.5 in. x 2 in.)</li>
+			<li> Quarter Note Sponsorship: $50, Quarter-page advertisement in concert program. (5 in. x 2 in.) </li>
+			<li> Half Note Sponsorship: $100, Half-page advertisement in concert program. (5 in. x 4 in.) </li>
+			<li> Whole Note Sponsorship: $200, Whole-page advertisement in concert program. (5 in. x 8 in.) </li>
+		</ul>
+	<p> All advertisement images must be sent in 300 DPI format. </p>
+</div>
+
+<div id=sponsorship class="desktop">
+		<h2> You can help support us in many ways! See our sponsorship tiers below. </h2>
+		
+		<table>
+			<tr> <!-- Row 1 -->
+				<th> Sponsorship Type </th>
+				<th> Donation Amount </th>
+				<th> Sponsorship Benefits </th>
+				<th> Advertisement Image Dimensions </th>
+				<th> Minimum Resolution for Advertisement Images </th>
+			</tr>
+			<tr> <!-- Row 2 -->
+				<td> Grace Note Sponsorship </td>
+				<td> Under $25 </td>
+				<td> Donor/business name listed in concert program. </td>
+				<td> N/A </td>
+				<td> N/A </td>
+			</tr>
+			<tr> <!-- Row 3 -->
+				<td> Eighth Note Sponsorship </td>
+				<td> $25 </td>
+				<td> Business card sized advetisement in concert program. </td>
+				<td> 3.5 x 2 in. </td>
+				<td rowspan="4"> 300 DPI </td>
+			</tr>
+			<tr> <!-- Row 4 -->
+				<td> Quarter Note Sponsorship </td>
+				<td> $50 </td>
+				<td> Quarter-page advertisement in concert program. </td>
+				<td> 5 in. x 2 in. </td>
+			</tr>
+			<tr> <!-- Row 5 -->
+				<td> Half Note Sponsorship </td>
+				<td> $100 </td>
+				<td> Half-page advertisement in concert program. </td>
+				<td> 5 in. x 4 in. </td>
+			</tr>
+			<tr> <!-- Row 6 -->
+				<td> Whole Note Sponsorship </td>
+				<td> $200 </td>
+				<td> Whole-page advertisement in concert program. </td>
+				<td> 5 in. x 8 in. </td>
+			</tr>
+		</table>
+		
+	</div>
+	<div id="form">		
+		<h2> Donate today! </h2>
+			<form class="form-grid" action="your-script.php" method="POST" enctype="multipart/form-data"> <!-- Start Form -->
+				<fieldset>
+				<legend> Contact Information </legend>
+					<label for="fName"> First Name: </label>
+					<input type="text" name="fName" id="fName" required>
+					
+					<label for="lName"> Last Name: </label>
+					<input type="text" name="lName" id="lName" required>
+					
+					<label for="bName"> Name of Business: </label>
+					<input type="text" name="bName" id="bName">
+					
+					<label for="email"> Email: </label>
+					<input type="email" name="email" id="email" required>
+					
+					<label for="phone"> Phone: </label>
+					<input type="tel" name="phone" id="phone">
+					
+					<label for="logo"> Advertisement Image (Please ensure appropriate dimensions and resolution): </label>
+					<input type="file" name="image" id="image" accept="image/*">
+				</fieldset>
+				
+				<fieldset>
+				<legend> Sponsorship Type </legend>
+					<p> I would like to become a: </p>
+					
+					<label for="grace">
+						<input type="radio" name="sponsor" id="grace" 
+						value="Grace Note Sponsor"> Grace Note Sponsor
+					</label>
+
+					<label for="eighth">
+						<input type="radio" name="sponsor" id="eighth" 
+						value="Eighth Note Sponsor"> Eighth Note Sponsor
+					</label>
+
+					<label for="quarter">
+						<input type="radio" name="sponsor" id="quarter" 
+						value="Quarter Note Sponsor"> Quarter Note Sponsor
+					</label>
+					
+					<label for="half">
+						<input type="radio" name="sponsor" id="half" 
+						value="Half Note Sponsor"> Half Note Sponsor
+					</label>
+					
+					<label for="whole">
+						<input type="radio" name="sponsor" id="whole" 
+						value="Whole Note Sponsor"> Whole Note Sponsor
+					</label>
+
+					<label for="amount">If Grace Note Sponsor, please specify desired donation amount below:</label>
+					
+					<textarea name="amount" id="amount" rows="5" cols="35"></textarea>
+				</fieldset>
+				
+				<fieldset>
+				<legend> Additional Information </legend>
+					<label for="referral"> How did you hear about us? </label>
+					<select name="referral" id="referral" required>
+						<option value="concert">Attended a Concert</option>
+						<option value="social">Social Media</option>
+						<option value="friend">From a Band Member</option>
+						<option value="other">Other</option>
+					</select>
+					
+					<label for="howhear">If your answer was Other, please explain below:</label>
+					
+					<textarea name="howhear" id="howhear" rows="5" cols="35"></textarea>
+				</fieldset>
+				
+				<input type="submit" id="submit" value="Submit" class="btn">
+			</form>
+	</div>
+</main>
+
+<footer>
+	<p> © 2006 Augusta Curtis Concert Band </p>
+	<p> <a href="mailto:theaccb@gmail.com">theaccb@gmail.com</a> </p>
+	<p> <a href="https://meridenct.myrec.com/info/facilities/details.aspx?FacilityID=15738">
+	Augusta Curtis Cultural Center</a> </p>
+</footer>
+
+</body>
+
+</html>
