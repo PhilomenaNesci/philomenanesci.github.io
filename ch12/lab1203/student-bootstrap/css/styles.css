@@ -22,7 +22,7 @@ Date: 5/11/2026
     color: #ffffff !important;
 }
 
-/* 3. Typography Overlay */
+/* Typography Overlay */
 .jumbotron h1 {
     text-shadow: 3px 3px 6px rgba(0,0,0,0.6);
     letter-spacing: 2px;
@@ -47,4 +47,26 @@ Date: 5/11/2026
 .thead-dark th {
     background-color: #1F0007 !important;
     border-color: #1F0007 !important;
+}
+
+/* container spans full height of screen */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+/* set body as flex container in vertical column */
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+/* main content area takes up all available space */
+main {
+    flex: 1 0 auto;
+}
+
+/* footer style rules */
+footer {
+    flex-shrink: 0;
 }
